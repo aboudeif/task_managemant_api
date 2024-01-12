@@ -14,7 +14,7 @@ Before you begin, make sure you have the following installed:
 1. **Clone the Repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/aboudeif/task_managemant_api.git
     cd task_management_api
     ```
 
@@ -47,7 +47,7 @@ Before you begin, make sure you have the following installed:
     php artisan serve
     ```
 
-   The API will be accessible at `http://127.0.0.1:8000`.
+   The API will be accessible at `http://127.0.0.1`.
 
 ## Entity Relationship Diagram (ERD)
 
