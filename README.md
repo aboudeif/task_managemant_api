@@ -109,7 +109,6 @@ Before you begin, make sure you have the following installed:
 
 ## Default Laravel Tables
 - `users` (Default Laravel users table)
-- `password_resets` (Default Laravel password resets table)
 - `migrations` (Default Laravel migrations table)
 - `failed_jobs` (Default Laravel failed jobs table)
 
