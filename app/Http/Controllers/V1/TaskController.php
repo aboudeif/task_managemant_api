@@ -16,10 +16,8 @@ class TaskController extends Controller
      */
     public function index()
     {
-        // Ensure the request is authenticated with Sanctum
-        if (!$this->authorize('view-all-tasks', Task::class)) {
-            return response()->json(['error' => 'this action is unautorized'], 403);
-        }
+         // Ensure the user is authenticated with Sanctum
+        $this->authorize('view-all-tasks', Task::class); 
 
         $tasks = Task::all();
         return response()->json($tasks);
