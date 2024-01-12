@@ -1,8 +1,5 @@
 <?php
 
-namespace App\Http\Controllers\V1;
-
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +13,3 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/home', function () {
-//      return response()->json(['error'=>'no token provided'], 500, null);
-// });
-// Delete task by an authorized user
-Route::delete('/tasks/{taskId}', [TaskController::class, 'destroy'])->name('task.destroy');

@@ -19,9 +19,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->bind(
-            'Illuminate\Contracts\Debug\ExceptionHandler',
-            CustomExceptionHandler::class
-        );
+        // $this->app->bind(
+        //     'Illuminate\Contracts\Debug\ExceptionHandler',
+        //     CustomExceptionHandler::class
+        // );
     }
 }

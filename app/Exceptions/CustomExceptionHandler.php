@@ -1,7 +1,5 @@
 <?php
 
-// app/Exceptions/CustomExceptionHandler.php
-
 namespace App\Exceptions;
 
 use Exception;
@@ -22,19 +20,10 @@ class CustomExceptionHandler extends ExceptionHandler
 
     protected function handleAuthorizationException(AuthorizationException $exception, $request)
     {
-        // Your custom logic to handle AuthorizationException
-        $message = $exception->getMessage();
-        $statusCode = 403; // You can customize the status code
+   =
+        $message = 'this action is unautorized';
+        $statusCode = 403; =
 
-        if ($request->expectsJson()) {
-            return response()->json(['error' => $message], $statusCode);
-        }
-
-        // For non-JSON responses, you can redirect or return a view
-        // Example: return redirect()->route('login');
-        // Example: return view('errors.custom', ['message' => $message, 'status' => $statusCode]);
-
-        // Fallback to the default Laravel behavior for non-JSON responses
-        return parent::render($request, $exception);
+        return response()->json(['error' => $message], $statusCode);
     }
 }
